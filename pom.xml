@@ -14,6 +14,32 @@
 
   <description>Some examples and code experiments</description>
 
+  <inceptionYear>2016</inceptionYear>
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>fatlenny</name>
+    <url>http://fatlenny.net</url>
+  </organization>
+
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/Mercynary/recitable/issues</url>
+  </issueManagement>
+
+  <scm>
+    <connection>scm:git:https://github.com/Mercynary/recitable.git</connection>
+    <developerConnection>scm:git:git@github.com:Mercynary/recitable.git</developerConnection>
+    <url>https://github.com/Mercynary/recitable</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <modules>
     <module>api</module>
     <module>service</module>
