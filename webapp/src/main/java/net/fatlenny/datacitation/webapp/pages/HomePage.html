@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>Apache Wicket Quickstart</title>
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body>
+		<div id="hd">
+			<div id="logo">
+				<a wicket:id="home"><img src="logo.png" width="50px" height="50px" alt="Wicket Logo" /></a>
+				<h1>ReCiteable</h1>
+			</div>
+		</div>
+		<div id="bd">
+			<h3>Choose Action!</h3>
+			
+			<div wicket:id="feedback"></div>
+			
+			<form wicket:id="datasetForm">
+				<p>
+					<label>Create new dataset from</label>: 
+					<br /> 
+					<select wicket:id="datasets"></select>
+				</p>
+				<input type="submit" value="Select" />
+			</form>
+			
+			<form wicket:id="queryForm">
+				<p>
+					<label>Select query to rerun</label>: 
+					<br /> 
+					<select wicket:id="queries"></select>
+				</p>
+				<input type="submit" value="Rerun" />
+			</form>
+		</div>
+		<div id="ft">
+		</div>
+	</body>
+</html>
