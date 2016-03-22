@@ -85,6 +85,24 @@
           <wtpversion>${wtp.version}</wtpversion>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>com.mycila.maven-license-plugin</groupId>
+        <artifactId>maven-license-plugin</artifactId>
+        <version>1.10.b1</version>
+        <configuration>
+          <header>https://github.com/Mercynary/recitable/raw/master/etc/header.txt</header>
+          <strictCheck>true</strictCheck>
+          <excludes>
+            <exclude>.gitignore</exclude>
+            <exclude>README.md</exclude>
+            <exclude>LICENSE</exclude>
+            <exclude>**/*.css</exclude>
+            <exclude>**/web.xml</exclude>
+            <exclude>src/test/resources/**</exclude>
+            <exclude>etc/**</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
