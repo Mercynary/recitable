@@ -23,6 +23,8 @@ _Prerequisite: Git must be installed on your computer._
 _At the moment datasets can only be registered via Git directly!_
 _At the moment datasets can only be in CSV with ; as field separator!_
 _You can use e.g. sed to replace the field separators._
+_Although ``git`` is very good in terms of storage usage many changes can bloat the repository. Ideally you should use
+``git gc`` to start the ``git`` garbage collection.
 
 Prepare a git repository that automatically collects your data. E.g. create a git repository by running:
 
@@ -46,6 +48,8 @@ Create a script that crawls and commits your data:
     git checkout master
     message=`date +%Y-%m-%d.%H:%M`
     git commit -am "ZAMG-MetroData $message"
+    # For a smaller storage footprint use the following command
+    git gc
 
 Create a cronjob that runs your script automatically.
 
